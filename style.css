@@ -672,7 +672,7 @@ ul {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -950,7 +950,13 @@ footer {
         text-align: left;
     }
     
-    .hide-mobile {
+    .timeline {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+    }
+    
+    .timeline::before {
         display: none;
     }
     
