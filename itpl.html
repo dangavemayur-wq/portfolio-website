@@ -3,39 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITPL SEO Case Study | Mayur Dangave</title>
+    <title>SEO & Digital Marketing Project on ITPL | Case Study | Mayur Dangave</title>
+    <meta name="description" content="SEO & Digital Marketing Case Study for IndianOil Total Pvt. Ltd. (ITPL). Details on organic traffic growth, SERP keyword rankings, Google Search Console, GMB listings, and LinkedIn social media scorecard.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        .case-header { text-align: center; margin-bottom: 50px; }
-        .case-header h1 { font-size: 3rem; color: var(--primary-dark); margin-bottom: 10px; font-family: var(--font-heading); font-weight: 800; }
-        .case-meta { display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; flex-wrap: wrap; }
-        .meta-item { text-align: center; background: var(--surface); padding: 20px 30px; border-radius: 15px; box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
-        .meta-item strong { display: block; color: var(--primary-dark); font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 5px; }
-        .meta-item span { color: var(--text-main); font-weight: 500; }
-        .case-body { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px; }
-        @media (max-width: 768px) { .case-body { grid-template-columns: 1fr; gap: 20px; margin-bottom: 40px; } .case-section { padding: 25px; } }
-        .case-section { background: var(--surface); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-sm); border: 1px solid var(--border); margin-bottom: 40px; }
-        .case-section h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--primary-dark); display: flex; align-items: center; gap: 10px; }
-        .case-section p, .case-section ul { font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; }
-        .case-section ul { padding-left: 20px; margin-bottom: 15px; }
-        .case-section li { margin-bottom: 8px; }
-        .back-btn { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 30px; color: var(--text-main); font-weight: 600; padding: 10px 20px; background: var(--surface); border-radius: 50px; box-shadow: var(--shadow-sm); transition: var(--transition); }
-        .back-btn:hover { background: var(--primary); color: #1C1C1E; transform: translateY(-2px); }
-        .insight-box { background: var(--primary-light); border-left: 4px solid var(--primary); padding: 20px; border-radius: 10px; margin-top: 20px; font-weight: 600; color: var(--primary-dark); font-style: italic; text-align: center;}
-        .cta-box { text-align: center; margin-top: 40px; padding: 40px; background: #121212; border-radius: 20px; color: white;}
-        .cta-box h3 { color: white; display: block; margin-bottom: 20px;}
-        .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;}
-        .stat-card { background: var(--bg-color); padding: 20px; border-radius: 10px; border: 1px solid var(--border); text-align: center;}
-        .stat-card strong { font-size: 1.8rem; color: var(--primary-dark); display: block; margin-bottom: 5px;}
+        .back-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            margin-bottom: 30px; 
+            color: var(--text-main); 
+            font-weight: 600; 
+            padding: 10px 22px; 
+            background: var(--surface); 
+            border-radius: 50px; 
+            box-shadow: var(--shadow-sm); 
+            border: 1px solid var(--border);
+            transition: var(--transition); 
+        }
+        .back-btn:hover { 
+            background: var(--primary); 
+            color: #1C1C1E; 
+            transform: translateY(-2px); 
+        }
+        .brand-subtext {
+            color: #10B981;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .cta-banner {
+            background: linear-gradient(135deg, #064E3B 0%, #065F46 100%);
+            color: #FFFFFF;
+            padding: 50px 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: var(--shadow-md);
+        }
+        .cta-banner h2 {
+            color: #FFFFFF;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        .cta-banner p {
+            color: #A7F3D0;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #FFFFFF;
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .contact-pill:hover {
+            background: var(--primary);
+            color: #1C1C1E;
+            transform: translateY(-2px);
+        }
+        .highlight-number {
+            color: #10B981;
+            font-weight: 800;
+        }
+        .data-section-title {
+            font-size: 1.8rem;
+            color: #111827;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
     </style>
-    <!-- Mailchimp -->
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f3855d22246efde5855459e48/d175ec799abc95fbc021b58ff.js");</script>
 </head>
 <body style="background-color: var(--bg-color);">
     <!-- Navigation -->
@@ -45,92 +108,762 @@
         </div>
     </nav>
 
-    <!-- Case Study Section -->
-    <section class="section-padding" style="margin-top: 80px;">
+    <!-- Case Study Main Container -->
+    <section class="section-padding" style="margin-top: 60px;">
         <div class="container">
             <a href="index.html#portfolio" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
             
-            <div class="case-header">
-                <h1>How We Achieved 72% Traffic from Organic Search for an Industrial Brand</h1>
-            </div>
-
-            <div class="case-meta">
-                <div class="meta-item">
-                    <strong><i class="fas fa-industry"></i> Industry</strong>
-                    <span>Infrastructure / Bitumen</span>
+            <!-- Hero & About Section -->
+            <div class="case-study-hero" style="background: linear-gradient(135deg, #064E3B 0%, #0F172A 100%);">
+                <div class="case-hero-top">
+                    <div>
+                        <span class="brand-subtext"><i class="fas fa-industry"></i> IndianOil Total Pvt. Ltd. (ITPL)</span>
+                        <h1>SEO & Digital Marketing Scorecard for ITPL</h1>
+                    </div>
+                    <a href="https://itpl.net" target="_blank" class="project-url-badge">
+                        <i class="fas fa-globe"></i> itpl.net <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                    </a>
                 </div>
-                <div class="meta-item">
-                    <strong><i class="fas fa-building"></i> Company</strong>
-                    <span>ITPL</span>
-                </div>
-                <div class="meta-item">
-                    <strong><i class="fas fa-bullseye"></i> Goal</strong>
-                    <span>Increase organic traffic and keyword rankings</span>
-                </div>
-            </div>
-
-            <div class="case-body">
-                <div class="case-section">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Key Challenges</h3>
-                    <ul>
-                        <li>Dependency on direct traffic</li>
-                        <li>Need for scalable keyword growth</li>
-                        <li>Limited structured SEO strategy</li>
-                    </ul>
-                </div>
-                <div class="case-section">
-                    <h3><i class="fas fa-tools"></i> SEO Strategy</h3>
-                    <ul>
-                        <li>New keyword mapping strategy</li>
-                        <li>Content optimization (product + landing pages)</li>
-                        <li>Backlink building (25 activities)</li>
-                        <li>Technical SEO enhancements</li>
-                        <li>LLM.txt implementation for search visibility</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="case-body">
-                <div class="case-section">
-                    <h3><i class="fas fa-tasks"></i> Execution</h3>
-                    <ul>
-                        <li>Keyword clustering</li>
-                        <li>On-page SEO optimization</li>
-                        <li>Off-page link building</li>
-                        <li>Content alignment for key pages</li>
-                    </ul>
+                
+                <div class="scorecard-banner">
+                    <div>
+                        <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: #A7F3D0;">Reporting Period</span>
+                        <h3 style="margin: 0; color: #FFFFFF; font-size: 1.4rem;">1st April 2026 – 30th June 2026 (Q2)</h3>
+                    </div>
+                    <span class="period-tag"><i class="fas fa-chart-line"></i> 72.3% Organic Search Share</span>
                 </div>
 
-                <div class="case-section">
-                    <h3><i class="fas fa-chart-line"></i> Results</h3>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <strong>72%</strong>
-                            <span>Organic Traffic Contribution</span>
+                <h3 style="color: #F3F4F6; margin-top: 25px; margin-bottom: 10px; font-size: 1.3rem;">About IndianOil Total Pvt. Ltd. (ITPL)</h3>
+                <p class="about-desc">
+                    IndianOil Total Private Limited (ITPL) is a 50:50 joint venture between Indian Oil Corporation Limited (IOCL) and TotalEnergies. ITPL manufactures and markets high-quality Bitumen Derivatives, Polymer Modified Bitumen (PMB) including Styrelf®, Bitumen Emulsions, and Crumb Rubber Modified Bitumen (CRMB) to enhance road construction durability and infrastructure across India.
+                </p>
+            </div>
+
+            <!-- Top Performance Highlights Grid -->
+            <div class="summary-cards-grid">
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-search"></i></div>
+                    <div class="val">1,100</div>
+                    <div class="subtext"><strong>Organic Search Users</strong> in June (up from 1,047 in May, <strong>+5.1% MoM</strong>)</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <div class="val">1,526</div>
+                    <div class="subtext"><strong>Total Monthly Traffic</strong> in June (up from 1,428 in May, <strong>+6.9% MoM</strong>)</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fas fa-mouse-pointer"></i></div>
+                    <div class="val">1,400</div>
+                    <div class="subtext"><strong>GSC Search Clicks</strong> in June (up from 1,122 in April, <strong>+24.8% Growth</strong>)</div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="fab fa-linkedin"></i></div>
+                    <div class="val">10,348</div>
+                    <div class="subtext"><strong>LinkedIn Followers</strong> (Crossed 10k+, <strong>#1 Rank</strong> among competitors)</div>
+                </div>
+            </div>
+
+            <!-- Executive SEO Summary (Slide 2 Data) -->
+            <div class="goals-section" style="text-align: left; background: #F9FAFB;">
+                <h2 style="text-align: center; margin-bottom: 25px;"><i class="fas fa-file-alt" style="color: #059669;"></i> Executive SEO Summary</h2>
+                <ul style="line-height: 1.8; color: #374151; font-size: 1.05rem; display: flex; flex-direction: column; gap: 14px;">
+                    <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 8px;"></i> <strong>Primary Traffic Driver:</strong> Organic Search remained the main traffic source, increasing from 1,047 users in May to <strong>1,100 users in June (+5.1% MoM growth)</strong>, contributing over 72% of overall website traffic.</li>
+                    <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 8px;"></i> <strong>Brand Direct Growth:</strong> Direct traffic increased from 277 users in May to <strong>313 users in June (+13.0% MoM growth)</strong>, reflecting stronger brand awareness.</li>
+                    <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 8px;"></i> <strong>New User Acquisition:</strong> Total new users rose consistently from 1,299 in May to <strong>1,367 in June (+5.2% growth)</strong> across all channels.</li>
+                    <li><i class="fas fa-check-circle" style="color: #10B981; margin-right: 8px;"></i> <strong>Overall Audience Expansion:</strong> Overall website traffic grew from 1,428 total users in May to <strong>1,526 users in June (+6.9% MoM growth)</strong>.</li>
+                </ul>
+            </div>
+
+            <!-- Our 4 Major Goals -->
+            <div class="goals-section">
+                <h2><i class="fas fa-bullseye" style="color: #059669;"></i> Our 4 Major Goals</h2>
+                <div class="goals-grid">
+                    <div class="goal-pill" style="background: linear-gradient(135deg, #065F46 0%, #047857 100%);"><i class="fas fa-search"></i> Expand Organic Search Visibility for Bitumen & PMB Products</div>
+                    <div class="goal-pill" style="background: linear-gradient(135deg, #065F46 0%, #047857 100%);"><i class="fas fa-chart-line"></i> Drive Direct Traffic & Multi-Channel User Acquisition</div>
+                    <div class="goal-pill" style="background: linear-gradient(135deg, #065F46 0%, #047857 100%);"><i class="fas fa-mobile-alt"></i> Optimize Technical SEO, Mobile Score & AI Search Readiness</div>
+                    <div class="goal-pill" style="background: linear-gradient(135deg, #065F46 0%, #047857 100%);"><i class="fas fa-award"></i> Build Brand Authority across Local GMB & LinkedIn Social Media</div>
+                </div>
+            </div>
+
+            <!-- What Did We Do? (Strategy Breakdown) -->
+            <div class="strategy-section">
+                <div class="section-header" style="margin-bottom: 30px;">
+                    <h2>What Did We Do?</h2>
+                    <div class="line"></div>
+                    <p>Comprehensive end-to-end SEO, technical optimization, and multi-channel marketing execution.</p>
+                </div>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <div class="icon-box" style="background: #ECFDF5; color: #059669;"><i class="fas fa-question-circle"></i></div>
+                        <h4>FAQ & Schema Creation</h4>
+                        <p>Developed and published structured FAQ content for high-value product pages including <strong>Modified VG 40 Bitumen</strong>, <strong>Styrelf® PMB PG Grading</strong>, and <strong>Natural Rubber Modified Bitumen</strong> to capture rich snippets.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="icon-box" style="background: #ECFDF5; color: #059669;"><i class="fas fa-file-code"></i></div>
+                        <h4>Blog Content Optimization</h4>
+                        <p>Optimized 2 newly developed technical blog posts focusing on bitumen modification, road construction durability, and industry specifications.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="icon-box" style="background: #ECFDF5; color: #059669;"><i class="fas fa-tachometer-alt"></i></div>
+                        <h4>Technical SEO & Site Speed</h4>
+                        <p>Executed full site speed optimization, reviewed technical errors, and maintained 91% SEMRush Site Health and 94/100 Mobile Performance score.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="icon-box" style="background: #ECFDF5; color: #059669;"><i class="fas fa-robot"></i></div>
+                        <h4>AI Engine Optimization</h4>
+                        <p>Optimized site structure for AI search crawlers (ChatGPT-User, OAI-SearchBot, Googlebot, Google-Extended), achieving 93% AI Search Health.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="icon-box" style="background: #ECFDF5; color: #059669;"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Local GMB Optimization</h4>
+                        <p>Managed Google My Business listings for Mumbai Head Office (4.9★) and Paldi Gujarat Plant (5.0★), driving hundreds of direction requests and calls.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="icon-box" style="background: #ECFDF5; color: #059669;"><i class="fab fa-linkedin"></i></div>
+                        <h4>LinkedIn Social Marketing</h4>
+                        <p>Published 13 high-engagement posts in June, pushing page followers past 10,000+ and ranking #1 in organic engagements among competitors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Audit & Site Health Dashboard (Slide 4 & 5 Data) -->
+            <div class="semrush-section">
+                <h2><i class="fas fa-shield-alt" style="color: #059669;"></i> SEO Audit, Site Health & Mobile Readiness</h2>
+                
+                <div class="semrush-stats-grid">
+                    <div class="semrush-card">
+                        <span class="label">SEMRush Site Health</span>
+                        <div class="value" style="color: #10B981;">91%</div>
+                        <span class="change"><i class="fas fa-check"></i> 101 Pages Crawled</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Mobile Friendly Score</span>
+                        <div class="value" style="color: #10B981;">94 / 100</div>
+                        <span class="change"><i class="fas fa-mobile-alt"></i> Fully Optimized</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">AI Search Health</span>
+                        <div class="value" style="color: #10B981;">93%</div>
+                        <span class="change"><i class="fas fa-robot"></i> AI Engine Ready</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Indexed Pages (GSC)</span>
+                        <div class="value">134</div>
+                        <span class="change"><i class="fas fa-sitemap"></i> 103 Discovered</span>
+                    </div>
+                </div>
+
+                <div style="background: #FFFFFF; padding: 25px; border-radius: 16px; border: 1px solid #E5E7EB; margin-top: 20px;">
+                    <h4 style="font-size: 1.15rem; color: #111827; margin-bottom: 12px;"><i class="fas fa-check-circle" style="color: #10B981;"></i> Mobile & AI Search Criteria Validation</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; color: #374151; font-size: 0.95rem;">
+                        <div><i class="fas fa-check" style="color: #10B981;"></i> Text on page easy to read</div>
+                        <div><i class="fas fa-check" style="color: #10B981;"></i> Viewport set correctly</div>
+                        <div><i class="fas fa-check" style="color: #10B981;"></i> ChatGPT-User: All Good</div>
+                        <div><i class="fas fa-check" style="color: #10B981;"></i> OAI-SearchBot: All Good</div>
+                        <div><i class="fas fa-check" style="color: #10B981;"></i> Googlebot: All Good</div>
+                        <div><i class="fas fa-check" style="color: #10B981;"></i> Google-Extended: All Good</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keyword Ranking Performance (Slide 14-16 Data) -->
+            <div class="ranking-section">
+                <h2><i class="fas fa-trophy" style="color: #FFB300;"></i> Keyword Ranking Performance</h2>
+                
+                <!-- MoM Ranking Growth Table -->
+                <h4 style="color: #9CA3AF; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 15px; text-align: center;">Month-on-Month Ranking Positions (May vs June 2026)</h4>
+                <div class="seo-table-container" style="margin-bottom: 35px;">
+                    <table class="seo-table">
+                        <thead>
+                            <tr>
+                                <th>Ranking Tier</th>
+                                <th>May 2026</th>
+                                <th>June 2026</th>
+                                <th>MoM Growth</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Top 3 Rankings</strong></td>
+                                <td>27 Keywords</td>
+                                <td><span class="rank-badge-current">29 Keywords</span></td>
+                                <td><span class="rank-jump"><i class="fas fa-arrow-up"></i> +7.4% Growth</span></td>
+                                <td><i class="fas fa-check-circle" style="color: #10B981;"></i> Improved</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Top 5 Rankings</strong></td>
+                                <td>32 Keywords</td>
+                                <td><span class="rank-badge-current">33 Keywords</span></td>
+                                <td><span class="rank-jump"><i class="fas fa-arrow-up"></i> +3.1% Growth</span></td>
+                                <td><i class="fas fa-check-circle" style="color: #10B981;"></i> Improved</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Top 10 Rankings</strong></td>
+                                <td>40 Keywords</td>
+                                <td><span class="rank-badge-current">43 Keywords</span></td>
+                                <td><span class="rank-jump"><i class="fas fa-arrow-up"></i> +7.5% Growth</span></td>
+                                <td><i class="fas fa-check-circle" style="color: #10B981;"></i> Improved</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Featured AI Keywords Overview Cards -->
+                <h4 style="color: #9CA3AF; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 15px;">Google AI Overview Feature Highlights</h4>
+                
+                <div class="ai-keyword-card">
+                    <span class="ai-tag"><i class="fas fa-sparkles"></i> Featured in Google AI Overview</span>
+                    <h3 style="color: #FFFFFF; margin-bottom: 10px;">Keyword: "Indian Oil PMB"</h3>
+                    <p style="color: #D1D5DB; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                        Google AI Overview highlights Indian Oil Corporation (IOCL) joint venture with TotalEnergies (ITPL), showcasing high-quality Polymer Modified Bitumen (PMB), <strong>Styrelf® 40 PMB</strong>, and IRC SP53:2010 compliance for highways and airport runways.
+                    </p>
+                </div>
+
+                <div class="ai-keyword-card">
+                    <span class="ai-tag"><i class="fas fa-sparkles"></i> Featured in Google AI Overview</span>
+                    <h3 style="color: #FFFFFF; margin-bottom: 10px;">Keyword: "PMB Suppliers in North India"</h3>
+                    <p style="color: #D1D5DB; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                        ITPL is recognized in Google AI Overviews and top organic SERP results as a premier PMB supplier across Delhi, Gurgaon, Sahibabad, and Panipat for NHAI projects.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Website Traffic - Channel-Wise & Overall Breakdown (Slide 8, 9, 10, 11, 12 Data) -->
+            <div class="semrush-section" style="background: #FFFFFF;">
+                <h2 style="color: #111827;"><i class="fas fa-chart-bar" style="color: #059669;"></i> Organic Traffic & Multi-Channel Analysis</h2>
+                
+                <!-- Channel-Wise Table -->
+                <h4 style="margin-top: 20px; margin-bottom: 15px; font-size: 1.1rem; color: #374151;">Website Traffic - Channel Wise (Apr - Jun 2026)</h4>
+                <div class="seo-table-container" style="margin-bottom: 30px;">
+                    <table class="seo-table" style="background: #FFFFFF; color: #111827; border: 1px solid #E5E7EB;">
+                        <thead>
+                            <tr style="background: #F9FAFB;">
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Source / Channel</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">April 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">June 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">MoM Growth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Organic Search</strong></td>
+                                <td>953</td>
+                                <td>1,047</td>
+                                <td><strong style="color: #059669; font-size: 1.1rem;">1,100</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+5.1%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Direct Traffic</strong></td>
+                                <td>266</td>
+                                <td>277</td>
+                                <td><strong>313</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+13.0%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Social</strong></td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>7</td>
+                                <td><span>-41.6%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Unassigned</strong></td>
+                                <td>3</td>
+                                <td>38</td>
+                                <td>60</td>
+                                <td><span style="color: #10B981; font-weight: 700;">+57.8%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Referral</strong></td>
+                                <td>40</td>
+                                <td>44</td>
+                                <td>42</td>
+                                <td><span>Stable</span></td>
+                            </tr>
+                            <tr style="background: #F0FDF4; font-weight: 800;">
+                                <td><strong>Total Channel Traffic</strong></td>
+                                <td>1,258</td>
+                                <td>1,418</td>
+                                <td><strong style="color: #047857; font-size: 1.15rem;">1,522</strong></td>
+                                <td><span style="color: #047857; font-weight: 800;">+7.3%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Overall Website Performance Table -->
+                <h4 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.1rem; color: #374151;">Overall Website Engagement Metrics</h4>
+                <div class="seo-table-container" style="margin-bottom: 30px;">
+                    <table class="seo-table" style="background: #FFFFFF; color: #111827; border: 1px solid #E5E7EB;">
+                        <thead>
+                            <tr style="background: #F9FAFB;">
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Metric</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">April 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">June 2026</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Total Users</strong></td>
+                                <td>1,272</td>
+                                <td>1,428</td>
+                                <td><strong style="color: #059669;">1,526</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>New Users</strong></td>
+                                <td>1,173</td>
+                                <td>1,299</td>
+                                <td><strong style="color: #059669;">1,367</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Page Views</strong></td>
+                                <td>2,904</td>
+                                <td>3,620</td>
+                                <td><strong>3,613</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bounce Rate</strong></td>
+                                <td>7.10%</td>
+                                <td>9.00%</td>
+                                <td>9.48%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Average Time on Page</strong></td>
+                                <td>1m 04s</td>
+                                <td>1m 10s</td>
+                                <td>54s</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Year-on-Year (YoY) Traffic Growth Table (Slide 10 Data) -->
+                <h4 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.1rem; color: #374151;">Year-on-Year (YoY) Growth Comparison (June 2025 vs June 2026)</h4>
+                <div class="seo-table-container" style="margin-bottom: 30px;">
+                    <table class="seo-table" style="background: #FFFFFF; color: #111827; border: 1px solid #E5E7EB;">
+                        <thead>
+                            <tr style="background: #F9FAFB;">
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Source</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2025</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">June 2025</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">June 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">YoY Growth (June)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Organic Search</strong></td>
+                                <td>895</td>
+                                <td>1,047</td>
+                                <td>919</td>
+                                <td><strong style="color: #059669;">1,100</strong></td>
+                                <td><span style="color: #10B981; font-weight: 800;">+19.7% YoY</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Direct</strong></td>
+                                <td>215</td>
+                                <td>277</td>
+                                <td>382</td>
+                                <td>312</td>
+                                <td><span>-18.3%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Referral</strong></td>
+                                <td>22</td>
+                                <td>44</td>
+                                <td>64</td>
+                                <td>42</td>
+                                <td><span>Stable</span></td>
+                            </tr>
+                            <tr style="background: #F0FDF4; font-weight: 800;">
+                                <td><strong>Total YoY Traffic</strong></td>
+                                <td>1,128</td>
+                                <td>1,418</td>
+                                <td>1,385</td>
+                                <td><strong style="color: #047857;">1,521</strong></td>
+                                <td><span style="color: #047857; font-weight: 800;">+9.8% YoY</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- New vs Returning Visitors Trend (Slide 12 Data) -->
+                <h4 style="margin-top: 30px; margin-bottom: 15px; font-size: 1.1rem; color: #374151;">New vs Returning Visitor Trend (Feb - Jun 2026)</h4>
+                <div class="seo-table-container">
+                    <table class="seo-table" style="background: #FFFFFF; color: #111827; border: 1px solid #E5E7EB;">
+                        <thead>
+                            <tr style="background: #F9FAFB;">
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Visitor Type</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Feb 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Mar 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Apr 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Jun 2026</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>New Visitors</strong></td>
+                                <td>1,281</td>
+                                <td>1,239</td>
+                                <td>1,173</td>
+                                <td>1,299</td>
+                                <td><strong style="color: #059669;">1,367</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Returning Visitors</strong></td>
+                                <td>232</td>
+                                <td>217</td>
+                                <td>235</td>
+                                <td>236</td>
+                                <td><strong>250</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Google Search Console Report (Slide 18 Data) -->
+            <div class="semrush-section">
+                <h2><i class="fab fa-google" style="color: #4285F4;"></i> Google Search Console Performance</h2>
+                
+                <div class="semrush-stats-grid">
+                    <div class="semrush-card">
+                        <span class="label">Total Impressions</span>
+                        <div class="value">61,535</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> +6.1% vs May</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Total Clicks</span>
+                        <div class="value" style="color: #10B981;">1,400</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> +12.3% vs May</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Average CTR</span>
+                        <div class="value" style="color: #10B981;">2.3%</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> Up from 1.8% in Apr</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Average Position</span>
+                        <div class="value">7.2</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> Improved from 7.8</span>
+                    </div>
+                </div>
+
+                <div class="seo-table-container">
+                    <table class="seo-table" style="background: #FFFFFF; color: #111827; border-radius: 12px; border: 1px solid #E5E7EB;">
+                        <thead>
+                            <tr style="background: #F9FAFB;">
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">GSC Metric</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">April 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">June 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Total Growth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Impressions</strong></td>
+                                <td>61,228</td>
+                                <td>58,000</td>
+                                <td><strong>61,535</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+307</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clicks</strong></td>
+                                <td>1,122</td>
+                                <td>1,246</td>
+                                <td><strong style="color: #059669; font-size: 1.1rem;">1,400</strong></td>
+                                <td><span style="color: #10B981; font-weight: 800;">+24.8%</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>CTR (%)</strong></td>
+                                <td>1.8%</td>
+                                <td>2.1%</td>
+                                <td><strong style="color: #059669;">2.3%</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+0.5% gain</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Average Position</strong></td>
+                                <td>5.9</td>
+                                <td>7.8</td>
+                                <td><strong>7.2</strong></td>
+                                <td><span>Top Tier SERP</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Google My Business (GMB) Local SEO (Slide 20-23 Data) -->
+            <div class="goals-section" style="text-align: left;">
+                <h2><i class="fas fa-store" style="color: #4285F4;"></i> Google My Business (GMB) Performance</h2>
+                <p style="color: #6B7280; margin-bottom: 25px; font-size: 1rem;">Active local SEO management for ITPL corporate offices and manufacturing facilities in India.</p>
+
+                <div class="gmb-grid">
+                    <!-- Mumbai Listing -->
+                    <div class="gmb-card">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <div>
+                                <h4><i class="fas fa-building" style="color: #059669;"></i> ITPL Head Office (Mumbai)</h4>
+                                <p style="color: #6B7280; font-size: 0.88rem; margin: 0;">Gala Impecca, JB Nagar, Andheri East, Mumbai</p>
+                            </div>
+                            <span class="rating-badge"><i class="fas fa-star"></i> 4.9 (42 Reviews)</span>
                         </div>
-                        <div class="stat-card">
-                            <strong>+16%</strong>
-                            <span>Top 3 Keywords</span>
+
+                        <div class="seo-table-container" style="margin-top: 15px;">
+                            <table class="seo-table" style="font-size: 0.9rem;">
+                                <thead>
+                                    <tr>
+                                        <th>Action</th>
+                                        <th>Apr</th>
+                                        <th>May</th>
+                                        <th>June</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Website Visits</td>
+                                        <td>78</td>
+                                        <td>63</td>
+                                        <td><strong>65</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Direction Requests</td>
+                                        <td>137</td>
+                                        <td>133</td>
+                                        <td><strong>112</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Calls</td>
+                                        <td>22</td>
+                                        <td>8</td>
+                                        <td><strong>12</strong></td>
+                                    </tr>
+                                    <tr style="background: #F9FAFB; font-weight: 700;">
+                                        <td>Total Customer Actions</td>
+                                        <td>237</td>
+                                        <td>204</td>
+                                        <td><strong style="color: #059669;">189</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="stat-card">
-                            <strong>+23%</strong>
-                            <span>Top 10 Keywords</span>
+                    </div>
+
+                    <!-- Paldi Gujarat Listing -->
+                    <div class="gmb-card">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <div>
+                                <h4><i class="fas fa-industry" style="color: #059669;"></i> ITPL Plant (Paldi, Gujarat)</h4>
+                                <p style="color: #6B7280; font-size: 0.88rem; margin: 0;">Survey No. 114/2, Paldi, Gujarat 391775</p>
+                            </div>
+                            <span class="rating-badge"><i class="fas fa-star"></i> 5.0 (2 Reviews)</span>
                         </div>
-                        <div class="stat-card">
-                            <strong>4.6</strong>
-                            <span>Avg Position (up from 5)</span>
+
+                        <div class="seo-table-container" style="margin-top: 15px;">
+                            <table class="seo-table" style="font-size: 0.9rem;">
+                                <thead>
+                                    <tr>
+                                        <th>Action</th>
+                                        <th>Apr</th>
+                                        <th>May</th>
+                                        <th>June</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Website Visits</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td><strong>3</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Direction Requests</td>
+                                        <td>101</td>
+                                        <td>144</td>
+                                        <td><strong>86</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Calls</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td><strong>9</strong></td>
+                                    </tr>
+                                    <tr style="background: #F9FAFB; font-weight: 700;">
+                                        <td>Total Customer Actions</td>
+                                        <td>103</td>
+                                        <td>148</td>
+                                        <td><strong style="color: #059669;">98</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="insight-box">
-                "Consistent keyword expansion + technical SEO = sustainable growth"
+            <!-- Social Media Marketing & LinkedIn Performance (Slide 24-33 Data) -->
+            <div class="semrush-section">
+                <h2><i class="fab fa-linkedin" style="color: #0A66C2;"></i> Social Media Marketing Scorecard (LinkedIn)</h2>
+                
+                <div class="semrush-stats-grid">
+                    <div class="semrush-card">
+                        <span class="label">LinkedIn Followers</span>
+                        <div class="value" style="color: #0A66C2;">10,348</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> +320 in June (Crossed 10k+)</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Post Engagement</span>
+                        <div class="value" style="color: #10B981;">7,762</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> +26.56% MoM Growth</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Page Views</span>
+                        <div class="value">958</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> +7.27% MoM Growth</span>
+                    </div>
+                    <div class="semrush-card">
+                        <span class="label">Unique Visitors</span>
+                        <div class="value">408</div>
+                        <span class="change"><i class="fas fa-arrow-up"></i> +17.24% MoM Growth</span>
+                    </div>
+                </div>
+
+                <!-- Monthly LinkedIn Stats Table -->
+                <h4 style="margin-top: 20px; margin-bottom: 15px; font-size: 1.1rem; color: #374151;">LinkedIn Monthly Metrics Breakdown</h4>
+                <div class="seo-table-container" style="margin-bottom: 30px;">
+                    <table class="seo-table" style="background: #FFFFFF; color: #111827; border: 1px solid #E5E7EB;">
+                        <thead>
+                            <tr style="background: #F9FAFB;">
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">LinkedIn Metric</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">April 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">May 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">June 2026</th>
+                                <th style="color: #4B5563; border-bottom: 1px solid #E5E7EB;">Observation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Post Impressions</strong></td>
+                                <td>33,252</td>
+                                <td>30,684</td>
+                                <td><strong>27,284</strong></td>
+                                <td><span>Steady Organic Reach</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Post Engagement</strong></td>
+                                <td>3,565</td>
+                                <td>6,133</td>
+                                <td><strong style="color: #059669; font-size: 1.1rem;">7,762</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+26.56% Growth</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Page Views</strong></td>
+                                <td>742</td>
+                                <td>893</td>
+                                <td><strong style="color: #059669;">958</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+7.27% Growth</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Unique Visitors</strong></td>
+                                <td>323</td>
+                                <td>348</td>
+                                <td><strong style="color: #059669;">408</strong></td>
+                                <td><span style="color: #10B981; font-weight: 700;">+17.24% Growth</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Page Followers</strong></td>
+                                <td>9,779</td>
+                                <td>10,028</td>
+                                <td><strong style="color: #0A66C2;">10,348</strong></td>
+                                <td><span style="color: #0A66C2; font-weight: 700;">+320 New Followers</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total Uploaded Posts</strong></td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td><strong>13</strong></td>
+                                <td><span>Consistent Pipeline</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Highlights of Top Performing LinkedIn Posts -->
+                <h4 style="margin-top: 25px; margin-bottom: 15px; font-size: 1.1rem; color: #374151;">Highlights of Top-Performing Posts</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <div style="background: #FFFFFF; padding: 20px; border-radius: 14px; border: 1px solid #E5E7EB;">
+                        <span style="background: #DBEAFE; color: #1E40AF; padding: 3px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700;">ARTICLE POST</span>
+                        <h4 style="margin-top: 10px; margin-bottom: 8px; color: #111827;">Bitumen Modification in Road Construction</h4>
+                        <ul style="padding-left: 18px; font-size: 0.9rem; color: #4B5563; margin: 0; line-height: 1.6;">
+                            <li><strong>1,426</strong> Impressions</li>
+                            <li><strong>110</strong> Engagements (7.71% rate)</li>
+                            <li><strong>64</strong> Link Clicks</li>
+                            <li><strong>12</strong> Reposts</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #FFFFFF; padding: 20px; border-radius: 14px; border: 1px solid #E5E7EB;">
+                        <span style="background: #D1FAE5; color: #065F46; padding: 3px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700;">CSR & EVENT POST</span>
+                        <h4 style="margin-top: 10px; margin-bottom: 8px; color: #111827;">World Environment Day Celebration</h4>
+                        <ul style="padding-left: 18px; font-size: 0.9rem; color: #4B5563; margin: 0; line-height: 1.6;">
+                            <li><strong>4,217</strong> Impressions</li>
+                            <li><strong>2,925</strong> Engagements (69.36% rate)</li>
+                            <li><strong>2,776</strong> Link Clicks</li>
+                            <li><strong>144</strong> Reactions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Competitor Benchmark Note -->
+                <div style="background: #ECFDF5; border-left: 4px solid #10B981; padding: 18px; border-radius: 10px; margin-top: 25px; color: #064E3B; font-weight: 600;">
+                    <i class="fas fa-trophy" style="color: #059669; margin-right: 8px;"></i> <strong>Competitor Benchmarking:</strong> ITPL ranks <strong>#1 among industry competitors</strong> in total monthly engagements (586) and total follower growth (+297 net), outperforming competitors such as Hindustan Colas, Jalnidhi, Ooms Polymer, and AR Thermosets.
+                </div>
             </div>
 
-            <div class="cta-box">
-                <h3>Want predictable SEO growth like this?</h3>
-                <a href="index.html#contact" class="btn-primary" style="display: inline-block; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: 600; color: #1C1C1E; background-color: #FFB300;">Let’s work together</a>
+            <!-- Way Forward / Next Steps (Slide 35-38 Data) -->
+            <div class="goals-section" style="text-align: left; background: #FFFFFF;">
+                <h2><i class="fas fa-compass" style="color: #059669;"></i> Way Forward & Strategy for Next Month</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <div style="background: #F9FAFB; padding: 20px; border-radius: 14px; border: 1px solid #E5E7EB;">
+                        <h4 style="color: #059669; margin-bottom: 8px;"><i class="fas fa-pen-nib"></i> Blog Content Pipeline</h4>
+                        <p style="color: #4B5563; font-size: 0.95rem; margin: 0; line-height: 1.6;">Develop informative, SEO-optimized blog articles on approved industry topics to continuously expand keyword rankings and drive organic search sessions.</p>
+                    </div>
+                    <div style="background: #F9FAFB; padding: 20px; border-radius: 14px; border: 1px solid #E5E7EB;">
+                        <h4 style="color: #059669; margin-bottom: 8px;"><i class="fas fa-wrench"></i> Technical SEO Audit Fixes</h4>
+                        <p style="color: #4B5563; font-size: 0.95rem; margin: 0; line-height: 1.6;">Resolve remaining crawl errors and technical issues identified in the audit to enhance site speed, indexing rate, and overall domain health.</p>
+                    </div>
+                    <div style="background: #F9FAFB; padding: 20px; border-radius: 14px; border: 1px solid #E5E7EB;">
+                        <h4 style="color: #059669; margin-bottom: 8px;"><i class="fas fa-bullseye"></i> Targeted Keywords Strategy</h4>
+                        <p style="color: #4B5563; font-size: 0.95rem; margin: 0; line-height: 1.6;">Target high-intent industrial keywords like Modified VG 40 Bitumen, Styrelf® PMB PG Grading, and Natural Rubber Modified Bitumen to maximize conversion-ready traffic.</p>
+                    </div>
+                    <div style="background: #F9FAFB; padding: 20px; border-radius: 14px; border: 1px solid #E5E7EB;">
+                        <h4 style="color: #059669; margin-bottom: 8px;"><i class="fas fa-link"></i> Off-Page Backlink Submissions</h4>
+                        <p style="color: #4B5563; font-size: 0.95rem; margin: 0; line-height: 1.6;">Execute multi-channel off-page submissions including social bookmarking, PDF submissions, blog posts, and Quora Q&A to strengthen backlink authority.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work With Us / Call To Action Banner -->
+            <div class="cta-banner">
+                <h2>Work With Us</h2>
+                <p>Want to achieve high keyword rankings, organic traffic growth, and search authority for your brand?</p>
+                <div class="cta-actions">
+                    <a href="tel:+918108566507" class="contact-pill">
+                        <i class="fas fa-phone-alt"></i> +91 8108566507
+                    </a>
+                    <a href="mailto:dangavemayur@gmail.com" class="contact-pill">
+                        <i class="fas fa-envelope"></i> dangavemayur@gmail.com
+                    </a>
+                    <a href="https://wa.me/918108566507" target="_blank" class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px; background-color: #FFB300; color: #1C1C1E; font-weight: 700; padding: 12px 26px; border-radius: 50px; text-decoration: none;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -151,5 +884,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
